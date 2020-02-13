@@ -1,0 +1,22 @@
+Ejercicios 2:
+
+1)vim forever.sh
+se crear el archivo y se pega el script el cual es forever.sh
+
+2) darle permisos a este archivo
+Para darle permisos a este archivo se ejecuta:
+chmod 700 forever.sh
+luego de ejcutar esto se puede ejecutar ll donde muestra forever.sh que 
+permisos tiene acceso.
+Cuando ya se ejecuta esto ya se tiene acceso al script, para ver esto se 
+ejecuta:
+./forever.sh donde ya inicia el proceso
+
+3) matar el proceso
+Para matar el proceso se ejecuta ps y se ve el PID de forever.sh, luego se
+lo mata con kill 
+
+4) NOHUP forever.sh
+PAra esto se ejecuta nohup ./forever.sh &
+cuando se ejcuta esto ya se sabe el PID, luego se cierra la terminal, se la
+vuelve a abrir y ejecutamos ps, cuando pasa esto aparece el script con su PID, de igual manera se ejecuta: ps -e, donde muestra todos los procesos completos.

@@ -1,0 +1,45 @@
+Ejercicios 1
+
+1) Cuales son los procesos de el usuario que esta ejecutando
+PAra esto, se debe ejecutar el comando: ps -fu mariana
+
+2) Procesos que todos los usuarios estan ejecutando
+Para saber los procesos de todos los usuarios que estan ejecutando se
+utiliza el comando: ps -ef
+
+3) Abra firexox y ver cual es su PID
+Para abrir el navegador Firefox y saber su PID se ejecuta el comando:
+firefox &, donde el resultado es:
+[1] 3688
+
+4) Matar firefox
+Para esto se conoce el PID que ya se vio anteriormente, entonces se 
+ejecuta: kill 3688
+
+5) Abra gedit via comando y coloque background con ctrl+z bg
+se escribe gdit donde se abre el editor, luego se ejecuta ctrl+z donde se para
+el programa, cuando se ejecuta bg, sale que esta en paralelo
+
+6) ctrl+z fg
+Se ejecuta fg y se para gedit.
+
+7) use top para ver los proceso
+top muestra los proceso y si se quiere ver los altos proceso se ejecuta
+ctrl+m
+
+8) use manual top para ver los comandos
+todo el listado que muestra el manual de top son como podriamos ver el top,
+es decir, en que orden, que proceso nos mostraria,etc.
+
+9) Matar un proceso
+- Abrimos firexfox
+- ejecutamos top 
+- encontramos su PID, el cual es 3906
+- luego se ejecuta kill 3906
+
+ 
+
+
+
+
+
