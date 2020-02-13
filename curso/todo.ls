@@ -1,0 +1,12 @@
+archivo_error
+aula1
+aula2
+aula3
+aula4
+aula5
+backup
+curso0.txt
+curso1.txt
+curso2.txt
+fulano
+todo.ls
