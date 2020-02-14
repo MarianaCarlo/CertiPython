@@ -1,0 +1,83 @@
+Ejercicios 3:
+
+1) Cual es el nombre de su maquina?
+Para esto se utiliza el comando whoami, donde muestra el nombre, en mi caso
+es: mariana.
+
+2) Que hora y fecha tiene el sistema?
+PAra saber la hora y fecha del sistema se utiliza el comando "date" y muestra
+el dia, la fecha, el anio, la hora. 
+Fri Feb 14 04:04:59 PST 2020
+
+3) En que camino esta el comando cp?
+Para saber esto se utiliza el comando: "which cp" donde el resultado del 
+camino de cp es:
+/bin/cp
+
+4) Intente adapatar los 10 ejemplos de usos del comando find para ubicar 
+archivos en su hogar
+
+1-Enumere todos los archivos contenidos en un directorio y subdirectorios -->
+Se utiliza: find .
+
+2-Especifique un limite en el numero de subdirectorios que se mostraran -->
+Si es que se utiliza el comando find ./curso -maxdepth 1, este comando desde
+home entra a curso y ve 1 directorio o subdirectorio o archivo, por ejemplo,
+si es que se escribe -maxdepth 2, entra hasta 2 veces al subdirectorio.
+
+3-Combina multiples criterios de busqueda:
+PAra esto en el folder curso se tiene varios subdirectorios y archivos, en 
+este caso se tiene un archivo que es: todo.ls, para usarlo de ejemplo se 
+utiliza la combinacion con: ! donde excluye el archivo que se quiere:
+find ./curso -name 'todo' ! -name '*.ls'
+
+4-Encuentra archivos o directorios solamente
+PAra esto se utilizan dos tipos:
+si es que se quiere encontrar el directorio de aulas, se utiliza el comando
+para subdirectorios de tipo f:
+find ./curso -type d -name "aula*"
+si es que se quiere archivos y no directorios se utiliza:
+find ./curso -type f -name "*.txt"
+
+5-Encuentra archivos ocultos
+PAra esto se encuentra los archivos ocultos desde home:
+find ~ -type f -name ".*"
+y muestroel listado de  todos los ocultos desde home
+
+6-Encuentra archivos con ciertos permisos:
+Con el archivo que se utilizo en el ejercicio 2 que se tiene el archivo de
+forever.sh que se tiene los permisos 700 se utiliza de ejemplo:
+find . -type f -perm 700
+cuando se ejecuta este comando se muestra el archivo forever.sh donde cumple
+los permisos 700
+
+7-Encontrar archivos basados en propietarios
+Si es que se prueba con el propietario mariana se escribe el nombre:
+find . -user mariana
+donde muestra el listado de todo lo que tiene este usuario
+
+8-Localizar archivos perteneciente a un grupo
+PAra esto se necesita un grupo donde el nombre de nuestro grupo es:
+grupoAmigos:
+flag -group grupoAmigos
+
+9-Busque archivos y directorios basados en periodos de modificacion:
+PAra esto se usa el comando find / -ctime 1 que muestra los archivos 
+modificados y el numero lo multiplica por 24, entonces lo que hace es buscar
+todos los cambios en 24 horas.
+
+10-Localizar archivos con un tamanio
+PAra esto si se tiene que utilizar el comando find / size 40M
+donde lista los archivoc que tenga este tamanio de 40M.
+
+
+5) HAcer find desde home que encuentre los archivos que terminen en .txt:
+PAra esto se utiliza el comando :
+find -name "*.txt"
+
+6)Borrar todos los archivos que tiene la extension: .so
+PAra esto en la carpeta aula2/ejemplos se tienen los archivos con varias 
+extensiones donde se borra con el comando: rm *.so.
+
+
+7) 
