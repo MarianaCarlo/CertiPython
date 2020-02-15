@@ -78,6 +78,4 @@ find -name "*.txt"
 6)Borrar todos los archivos que tiene la extension: .so
 PAra esto en la carpeta aula2/ejemplos se tienen los archivos con varias 
 extensiones donde se borra con el comando: rm *.so.
-
-
-7) 
+ 
