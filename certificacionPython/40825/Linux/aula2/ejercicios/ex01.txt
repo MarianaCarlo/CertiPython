@@ -1,0 +1,42 @@
+Comandos:
+Grupo a:
+
+Comando ls:
+Este comando muestra todos los archivos que tiene un folder, los muestra en
+columnas
+
+Comando ls -m:
+ESte comando muestra todos los archivos, pero a diferencia de ls, 
+muestra los archivos en una sola linea
+
+COmando ls -l:
+Muestra los archivos pero con los permisos de cada uno de ellos, 
+el usuario quien lo creo y la fecha en la que se lo crep.
+
+Comando ls -l -v:
+Este comando muestra todos los archivos de un folder con los permisos que
+tiene cada uno, la fecha y el usuario que lo creo pero a diferencia de ls -l, este comando los ordena.
+
+
+Grupo c:
+
+Comando ls ai[1-5].c:
+Este comando muestra todos los archivos de un folder que comiencen con ai 
+donde luego estan los numeros del 1 al 5 y estan la extencion .c, es decir,
+muestra los 5 archivos que comiencen con ai.
+
+COmando ls [a-c]ii1.c:
+ESte comando muestra todos los archivos que comiencen con a,b,c y sigan 
+con el ii1.c, en este caso muestra 3 archivos.
+
+Grupo e:
+
+Comando echo ai[1-5].c:
+Este comando muestra en una linea los archivos que comiencen con ai y luego
+venga un numero entre 1 y 5 y siga con la extension .c
+
+COmando echo [a-c]ii1.c:
+Este comando muestra en una linea todos los archivos que contengan 
+al inicio las letras a,b,c y luego ii1.c, en este caso muestra 3 archivos.
+
+ 
